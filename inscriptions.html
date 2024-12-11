@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival des Films d'Animation Japonais</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50" height="50" />
+        </div>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+        </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/apropos.html">Le Festival (À propos)</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/programmation.html">Programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/atraxion.html">l’AtraXion, Belfort</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/inscriptions.html">Inscriptions et tarifs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <header class="header">
+            <div class="header__logo"></div>
+            <nav class="header__nav">
+                <button class="header__nav-button"></button>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="main__inscription">
+                <h1 class="main__inscription-title">Inscriptions et tarifs</h1>
+                <h2 class="main__inscription-text">Pour s'inscrire au festival, remplissez le formulaire suivant :</h2>
+                <form class="main__inscription-form" action="#" method="post">
+                    <div class="main__inscription-form-field">
+                        <label class="main__inscription-form-label" for="nom">NOM</label>
+                        <input class="main__inscription-form-input" type="text" id="nom" name="nom"
+                            placeholder="Écrire ici..." required>
+                    </div>
+                    <div class="main__inscription-form-field">
+                        <label class="main__inscription-form-label" for="prenom">PRÉNOM</label>
+                        <input class="main__inscription-form-input" type="text" id="prenom" name="prenom"
+                            placeholder="Écrire ici..." required>
+                    </div>
+                    <div class="main__inscription-form-field">
+                        <label class="main__inscription-form-label" for="email">ADRESSE MAIL</label>
+                        <input class="main__inscription-form-input" type="email" id="email" name="email"
+                            placeholder="Écrire ici..." required>
+                    </div>
+                    <div class="main__inscription-form-field">
+                        <label class="main__inscription-form-label" for="age">ÂGE</label>
+                        <input class="main__inscription-form-input" type="number" id="age" name="age"
+                            placeholder="Écrire ici..." required>
+                        <section>
+                            <button>SOUMETTRE</button>
+                        </section>
+
+                        <section>
+                            <h2>Tarifs du festival :</h2>
+
+                            <p>Pass Journée :
+                            <p>
+                            <ul>
+                                <li>Adultes (à partir de 18 ans): 10€</li>
+                                <li>Réduit (étudiants, moins de 18 ans): 8€</li>
+                                <li>Enfants (moins de 12 ans) : 3€</li>
+                            </ul>
+
+                            <p>Pass 3 jours :
+                            <p>
+                            <ul>
+                                <li>Adultes (à partir de 18 ans): 25€</li>
+                                <li>Réduit (étudiants, moins de 18 ans): 19€</li>
+                                <li>Enfants (moins de 12 ans) : 8€</li>
+                            </ul>
+                        </section>
+        </main>
+        <footer class="footer">
+            <section class="footer__logo">
+                <img src="/assets/icones/logo.svg" alt="Logo du festival">
+            </section>
+            <section>
+                <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+            </section>
+            <section class="footer__link">
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">MENTIONS LÉGALES</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">CONTACT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">EN SAVOIR PLUS</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
+                    </li>
+                </ul>
+                <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+                <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            </section>
+        </footer>
+    </body>
