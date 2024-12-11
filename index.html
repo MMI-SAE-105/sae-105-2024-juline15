@@ -1,14 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival des films d'animation japonais</title>
+    <title>Festival des Films d'Animation Japonais</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50" height="50" />
+        </div>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/apropos.html">Le Festival (À propos)</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/programmation.html">Programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/atraxion.html">l’AtraXion, Belfort</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/inscriptions.html">Inscriptions et tarifs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h1>Festival des Films d'Animation Japonais</h1>
+        <img src="/assets/img/image-page_accueil.jpg" alt="Projection festival">
+        <p>Venez faire des rencontres uniques et partager votre passion !</p>
+        <p>Bienvenue au Festival des films d’animations japonais ! Rejoignez-nous les 11, 12 et 13 Juillet 2025 au Parc
+            des
+            Expositions de Belfort pour une expérience unique.</p>
+        <p>C'est le rendez-vous incontournable pour tous les passionnés d'animation japonaise, où la magie de l'image et
+            du son se
+            rencontrent pour trois jours de projections, de discussions et de découvertes.</p>
+        <p>Plongez au cœur des univers imaginaires, partagez votre passion avec d'autres amateurs et vivez des moments
+            inoubliables
+            dans un cadre exceptionnel !</p>
+        <button class="btn">Cliquez pour réserver vos billets</button>
+    </section>
+
+    <main>
+        <section class="programmation">
+            <h2>La programmation</h2>
+            <img src="/assets/img/ticket-programmation.webp" alt="3 tickets de films">
+            <ul>
+                <li>Liste complète des films</li>
+                <li>Durée et genre</li>
+                <li>Synopsis</li>
+            </ul>
+            <a href="#" class="btn">En savoir plus</a>
+        </section>
+
+        <section class="invites">
+            <h2>Invités</h2>
+            <img src="/assets/img/cinema-invite.webp"
+                alt="personnes dans un cinéma avec une fenêtre qui donne sur la Tour Eiffel">
+            <ul>
+                <li>Biographie</li>
+                <li>Films, séries</li>
+                <li>Médias</li>
+            </ul>
+            <a href="#" class="btn">En savoir plus</a>
+        </section>
+
+        <section class="infos">
+            <h2>Informations pratiques</h2>
+            <img src="/assets/img/info-pratiques.webp" alt="">
+            <ul>
+                <li>Tarifs</li>
+                <li>Lieux, hébergement et transport</li>
+                <li>FAQ</li>
+            </ul>
+            <a href="#" class="btn">En savoir plus</a>
+        </section>
+
+        <section class="partenaires">
+            <h3>Nos partenaires :</h3>
+            <img src="/assets/img/delice-dasie.webp" alt="logo Délice d'Asie"></li>
+            <img src="/assets/img/subway.webp" alt="logo Subway"></li>
+            <img src="/assets/img/boulanger.webp" alt="logo Boulanger"></li>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__logo">
+            <img src="/assets/icones/logo.svg" alt="Logo du festival">
+        </section>
+        <section>
+            <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        </section>
+        <section class="footer__link">
+            <ul>
+                <li class="footer__item">
+                    <a class="footer__link" href="">MENTIONS LÉGALES</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">CONTACT</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">EN SAVOIR PLUS</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
+                </li>
+            </ul>
+            <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+            <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+        </section>
+    </footer>
 </body>
 
 </html>
