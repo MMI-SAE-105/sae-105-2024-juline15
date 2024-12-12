@@ -6,8 +6,6 @@ body {
     font-size: 13px;
 }
 
-/*page d'accueil*/
-
 .hero {
     text-align: center;
     padding: 20px;
@@ -26,6 +24,22 @@ body {
     width: 100%;
     height: auto;
     padding-bottom: 35px;
+}
+
+.hero__text-title {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    padding-bottom: 75px;
+    text-align: center;
+
 }
 
 .hero__text {
@@ -123,15 +137,15 @@ body {
 .invites__btn,
 .infos__btn,
 .apropos__btn {
-    background-color: rgb(178, 34, 34);
-    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #D9534F;
+    color: #FFF;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+    text-decoration: none;
 }
 
 .partenaires {
@@ -157,5 +171,3 @@ body {
     height: 103px;
     flex-shrink: 0;
 }
-
-/* page programmation */
