@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgb(178, 34, 34);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__logo-img,
+.footer__flowers-img {
+    width: 50px;
+    height: auto;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__item {
+    margin: 0 15px;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer__social {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
