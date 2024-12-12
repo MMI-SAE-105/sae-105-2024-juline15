@@ -1,4 +1,4 @@
-.header__menu {
+.menu {
     visibility: hidden;
     display: flex;
     position: fixed;
@@ -21,8 +21,12 @@
 .menu__link {
     color: var(--black);
     text-decoration: none;
-    font-size: var(--fs-xl);
-    display: block;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding: 10px 0;
 }
 
 .menu__link--silent {
@@ -31,7 +35,7 @@
 }
 
 .menu__item {
-    margin-bottom: var(--space3x);
+    margin-bottom: 37px;
     padding-bottom: var(--space1x);
     border-bottom: 1px solid var(--black);
 }
@@ -75,7 +79,6 @@
     top: 10px;
 }
 
-/* Transformation des barres du bouton de menu en croix */
 .menu-btn[aria-expanded="true"] .menu-btn__bar,
 .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
 .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
@@ -87,4 +90,10 @@
 .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     transform: rotate(90deg);
     top: 0;
+}
+
+.list-unstyled {
+    margin-top: 223px;
+    list-style-type: none;
+    padding-left: 35px;
 }
