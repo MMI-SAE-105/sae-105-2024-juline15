@@ -12,14 +12,14 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="/index.html">
+            <a class="header__logo-link" href="/index.html">
                 <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
                     height="50" />
             </a>
         </div>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar" aria-hidden="true"></span>
-            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+            <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list list-unstyled">
@@ -39,59 +39,55 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Mon voisin Totoro</h1>
+    <main class="main-content">
+        <section class="film">
+            <h1 class="film__title">Mon voisin Totoro</h1>
         </section>
 
-        <section>
-            <img src="/assets/img/totoro1.webp" alt="extrait du film Mon voisin totoro">
-            <img src="/assets/img/totoro2.0.webp" alt="extrait du film Mon voisin totoro">
+        <section class="film__images">
+            <img class="film__image" src="/assets/img/totoro1.webp" alt="extrait du film Mon voisin Totoro">
+            <img class="film__image" src="/assets/img/totoro2.0.webp" alt="extrait du film Mon voisin Totoro">
         </section>
 
-        <section>
-            <h2>Durée : 1h35</h2>
-            <h2>Genre : Cinéma de fantasy/Aventure</h2>
-            <h2>Date de sortie : 1998</h2>
+        <section class="film__details">
+            <h2 class="film__detail">Durée : 1h35</h2>
+            <h2 class="film__detail">Genre : Cinéma de fantasy/Aventure</h2>
+            <h2 class="film__detail">Date de sortie : 1998</h2>
         </section>
 
-        <section>
-            <p>"Mon Voisin Totoro" (Tonari no Totoro), réalisé par Hayao Miyazaki et produit par le studio Ghibli en
-                1988, est un
-                classique de l'animation japonaise.</p>
-            <p>Le film suit Satsuki et Mei, deux sœurs qui emménagent à la campagne pour se rapprocher de l'hôpital où
-                leur mère est
-                soignée. Dans cette nature luxuriante, elles découvrent un monde magique peuplé d'esprits, dont Totoro,
-                une créature
-                bienveillante et mystérieuse. Avec sa poésie et son émerveillement, le film explore l'enfance, la
-                famille et la beauté
-                de la nature.</p>
-            <p>"Mon Voisin Totoro" est un voyage enchanteur, qui invite petits et grands à redécouvrir la magie du
-                quotidien.</p>
+        <section class="film__description">
+            <p class="film__text">"Mon Voisin Totoro" (Tonari no Totoro), réalisé par Hayao Miyazaki et produit par le
+                studio Ghibli en 1988, est un classique de l'animation japonaise.</p>
+            <p class="film__text">Le film suit Satsuki et Mei, deux sœurs qui emménagent à la campagne pour se
+                rapprocher de l'hôpital où leur mère est soignée. Dans cette nature luxuriante, elles découvrent un
+                monde magique peuplé d'esprits, dont Totoro, une créature bienveillante et mystérieuse. Avec sa poésie
+                et son émerveillement, le film explore l'enfance, la famille et la beauté de la nature.</p>
+            <p class="film__text">"Mon Voisin Totoro" est un voyage enchanteur, qui invite petits et grands à
+                redécouvrir la magie du quotidien.</p>
         </section>
 
-        <section>
-            <h2>En découvrir plus :</h2>
-            <a href="https://www.youtube.com/watch?v=E8qYl2_b6HI">
-                <button>BANDE ANNONCE VF</button>
+        <section class="film__extras">
+            <h2 class="film__extras-title">En découvrir plus :</h2>
+            <a class="film__link" href="https://www.youtube.com/watch?v=E8qYl2_b6HI">
+                <button class="film__button">BANDE ANNONCE VF</button>
             </a>
             <p></p>
-
-            <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki">
-                <button>BIOGRAPHIE DU RÉALISATEUR</button>
+            <a class="film__link" href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki">
+                <button class="film__button">BIOGRAPHIE DU RÉALISATEUR</button>
             </a>
         </section>
+
     </main>
 
     <footer class="footer">
         <section class="footer__logo">
-            <img src="/assets/icones/logo.svg" alt="Logo du festival">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
         </section>
-        <section>
-            <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        <section class="footer__decorations">
+            <img class="footer__image" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
         </section>
-        <section class="footer__link">
-            <ul>
+        <section class="footer__links">
+            <ul class="footer__list">
                 <li class="footer__item">
                     <a class="footer__link" href="">MENTIONS LÉGALES</a>
                 </li>
@@ -105,8 +101,8 @@
                     <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
                 </li>
             </ul>
-            <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-            <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            <img class="footer__social-icon" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+            <img class="footer__social-icon" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
         </section>
     </footer>
 </body>

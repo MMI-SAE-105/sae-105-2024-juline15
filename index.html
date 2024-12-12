@@ -19,7 +19,7 @@
         </div>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar" aria-hidden="true"></span>
-            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+            <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list list-unstyled">
@@ -40,87 +40,88 @@
     </header>
 
     <section class="hero">
-        <h1>Festival des Films d'Animation Japonais</h1>
-        <img src="/assets/img/image-page_accueil.jpg" alt="Projection festival">
-        <p>Venez faire des rencontres uniques et partager votre passion !</p>
-        <p>Bienvenue au Festival des films d’animations japonais ! Rejoignez-nous les <strong>11, 12 et 13 Juillet 2025
+        <h1 class="hero__title">Festival des Films d'Animation Japonais</h1>
+        <img class="hero__image" src="/assets/img/image-page_accueil.jpg" alt="Projection festival">
+        <p class="hero__text">Venez faire des rencontres uniques et partager votre passion !</p>
+        <p class="hero__text">Bienvenue au Festival des films d’animations japonais ! Rejoignez-nous les <strong>11, 12
+                et 13 Juillet 2025
                 au Parc
                 des
                 Expositions de Belfort</strong> pour une expérience unique.</p>
-        <p>C'est le rendez-vous incontournable pour tous les passionnés d'animation japonaise, où la magie de l'image et
+        <p class="hero__text">C'est le rendez-vous incontournable pour tous les passionnés d'animation japonaise, où la
+            magie de l'image et
             du son se
             rencontrent pour trois jours de projections, de discussions et de découvertes.</p>
-        <p>Plongez au cœur des univers imaginaires, partagez votre passion avec d'autres amateurs et vivez des moments
+        <p class="hero__text">Plongez au cœur des univers imaginaires, partagez votre passion avec d'autres amateurs et
+            vivez des moments
             inoubliables
             dans un cadre exceptionnel !</p>
-        <button class="btn">Cliquez pour réserver vos billets</button>
+        <button class="hero__btn btn">Cliquez pour réserver vos billets</button>
     </section>
 
-    <main>
+    <main class="main">
         <section class="programmation">
-            <h2>La programmation</h2>
-            <img src="/assets/img/ticket-programmation.webp" alt="3 tickets de films">
-            <ul>
-                <li>Liste complète des films</li>
-                <li>Durée et genre</li>
-                <li>Synopsis</li>
+            <h2 class="programmation__title">La programmation</h2>
+            <img class="programmation__image" src="/assets/img/ticket-programmation.webp" alt="3 tickets de films">
+            <ul class="programmation__list">
+                <li class="programmation__item">Liste complète des films</li>
+                <li class="programmation__item">Durée et genre</li>
+                <li class="programmation__item">Synopsis</li>
             </ul>
-            <a href="/programmation.html" class="btn">En savoir plus</a>
+            <a href="/programmation.html" class="programmation__btn btn">En savoir plus</a>
         </section>
 
         <section class="invites">
-            <h2>Invités</h2>
-            <img src="/assets/img/cinema-invite.webp"
+            <h2 class="invites__title">Invités</h2>
+            <img class="invites__image" src="/assets/img/cinema-invite.webp"
                 alt="personnes dans un cinéma avec une fenêtre qui donne sur la Tour Eiffel">
-            <ul>
-                <li>Biographie</li>
-                <li>Films, séries</li>
-                <li>Médias</li>
+            <ul class="invites__list">
+                <li class="invites__item">Biographie</li>
+                <li class="invites__item">Films, séries</li>
+                <li class="invites__item">Médias</li>
             </ul>
-            <a href="#" class="btn">En savoir plus</a>
+            <a href="#" class="invites__btn btn">En savoir plus</a>
         </section>
 
         <section class="infos">
-            <h2>Informations pratiques</h2>
-            <img src="/assets/img/info-pratiques.webp" alt="i dans un rond">
-            <ul>
-                <li>Historique</li>
-                <li>Équipe</li>
-                <li>Charte</li>
+            <h2 class="infos__title">Informations pratiques</h2>
+            <img class="infos__image" src="/assets/img/info-pratiques.webp" alt="i dans un rond">
+            <ul class="infos__list">
+                <li class="infos__item">Historique</li>
+                <li class="infos__item">Équipe</li>
+                <li class="infos__item">Charte</li>
             </ul>
-            <a href="/infospratiques.html" class="btn">En savoir plus</a>
+            <a href="/infospratiques.html" class="infos__btn btn">En savoir plus</a>
         </section>
 
-        <section class="infos">
-            <h2>Le Festival (À propos)</h2>
-            <img src="/assets/img/apropos.webp" alt="cinéma en plein air avec écran géant">
-            <ul>
-                <li>Tarifs</li>
-                <li>Lieux, hébergement et transport</li>
-                <li>FAQ</li>
+        <section class="apropos">
+            <h2 class="apropos__title">Le Festival (À propos)</h2>
+            <img class="apropos__image" src="/assets/img/apropos.webp" alt="cinéma en plein air avec écran géant">
+            <ul class="apropos__list">
+                <li class="apropos__item">Tarifs</li>
+                <li class="apropos__item">Lieux, hébergement et transport</li>
+                <li class="apropos__item">FAQ</li>
             </ul>
-            <a href="/apropos.html" class="btn">En savoir plus</a>
+            <a href="/apropos.html" class="apropos__btn btn">En savoir plus</a>
         </section>
 
         <section class="partenaires">
-            <h3>Nos partenaires :</h3>
-            <img src="/assets/img/delice-dasie.webp" alt="logo Délice d'Asie"></li>
-            <img src="/assets/img/subway.webp" alt="logo Subway"></li>
-            <img src="/assets/img/boulanger.webp" alt="logo Boulanger"></li>
+            <h3 class="partenaires__title">Nos partenaires :</h3>
+            <img class="partenaires__image" src="/assets/img/delice-dasie.webp" alt="logo Délice d'Asie">
+            <img class="partenaires__image" src="/assets/img/subway.webp" alt="logo Subway">
+            <img class="partenaires__image" src="/assets/img/boulanger.webp" alt="logo Boulanger">
         </section>
-
-
     </main>
 
     <footer class="footer">
         <section class="footer__logo">
-            <img src="/assets/icones/logo.svg" alt="Logo du festival">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
         </section>
-        <section>
-            <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        <section class="footer__flowers">
+            <img class="footer__flowers-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
         </section>
-        <section class="footer__link">
-            <ul>
+        <section class="footer__links">
+            <ul class="footer__list">
                 <li class="footer__item">
                     <a class="footer__link" href="">MENTIONS LÉGALES</a>
                 </li>
@@ -134,8 +135,8 @@
                     <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
                 </li>
             </ul>
-            <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-            <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            <img class="footer__social" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+            <img class="footer__social" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
         </section>
     </footer>
 </body>

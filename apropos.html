@@ -9,17 +9,17 @@
     <script defer src="script.js"></script>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="header__logo">
-            <a href="/index.html">
+            <a class="header__logo-link" href="/index.html">
                 <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
                     height="50" />
             </a>
         </div>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar" aria-hidden="true"></span>
-            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+            <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list list-unstyled">
@@ -39,64 +39,62 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Le Festival (À propos)</h1>
+    <main class="main">
+        <section class="about">
+            <h1 class="about__title">Le Festival (À propos)</h1>
 
-            <h2>Historique : Présentation du festival</h2>
-            <p>Fondé en 2024, le Festival des Films d'Animation Japonais est né de la passion pour l'univers riche et
-                créatif de
-                l'animation japonaise. Ce festival a pour ambition de célébrer l'art unique de l'animation japonaise en
-                mettant en
-                lumière ses créateurs emblématiques et en offrant une plateforme aux talents émergents.</p>
-            <p>Depuis sa création, le festival est devenu un rendez-vous incontournable pour les amateurs et
-                professionnels de
-                l'animation, accueillant chaque année des milliers de visiteurs et des invités prestigieux. L'objectif
-                est de promouvoir
-                la diversité culturelle et de créer des échanges enrichissants autour de cet art fascinant.</p>
+            <h2 class="about__subtitle">Historique : Présentation du festival</h2>
+            <p class="about__text">Fondé en 2024, le Festival des Films d'Animation Japonais est né de la passion pour
+                l'univers riche et créatif de l'animation japonaise. Ce festival a pour ambition de célébrer l'art
+                unique de l'animation japonaise en mettant en lumière ses créateurs emblématiques et en offrant une
+                plateforme aux talents émergents.</p>
+            <p class="about__text">Depuis sa création, le festival est devenu un rendez-vous incontournable pour les
+                amateurs et professionnels de l'animation, accueillant chaque année des milliers de visiteurs et des
+                invités prestigieux. L'objectif est de promouvoir la diversité culturelle et de créer des échanges
+                enrichissants autour de cet art fascinant.</p>
 
-            <h2>Équipe : Organisateurs et équipe technique</h2>
-            <p>Derrière cet événement se cache une équipe d’enthousiastes et de professionnels dédiés :</p>
-            <ul>
-                <li>Direction Artistique : Juline ADAM, experte en cinéma d’animation et fervent défenseur de la culture
-                    japonaise.</li>
-                <li>Organisation : Une équipe dynamique de 20 personnes regroupant des chargés de communication, des
-                    gestionnaires
-                    événementiels et des volontaires passionnés.</li>
-                <li>Support Technique : Une équipe technique hautement compétente qui veille au bon fonctionnement des
-                    projections, des
-                    ateliers et des installations.</li>
+            <h2 class="about__subtitle">Équipe : Organisateurs et équipe technique</h2>
+            <p class="about__text">Derrière cet événement se cache une équipe d’enthousiastes et de professionnels
+                dédiés :</p>
+            <ul class="about__list">
+                <li class="about__item">Direction Artistique : Juline ADAM, experte en cinéma d’animation et fervent
+                    défenseur de la culture japonaise.</li>
+                <li class="about__item">Organisation : Une équipe dynamique de 20 personnes regroupant des chargés de
+                    communication, des gestionnaires événementiels et des volontaires passionnés.</li>
+                <li class="about__item">Support Technique : Une équipe technique hautement compétente qui veille au bon
+                    fonctionnement des projections, des ateliers et des installations.</li>
             </ul>
-            <p>Nous collaborons également avec des partenaires et des sponsors engagés, qui partagent notre vision et
-                soutiennent nos
-                ambitions.</p>
+            <p class="about__text">Nous collaborons également avec des partenaires et des sponsors engagés, qui
+                partagent notre vision et soutiennent nos ambitions.</p>
 
-            <h2>Charte : Valeurs et thématique de l’édition</h2>
-            <p>Chaque édition du Festival des Films d'Animation Japonais repose sur des valeurs fortes :</p>
-            <ul>
-                <li>Créativité : Mettre en avant l’originalité et l’audace artistique des créateurs japonais.</li>
-                <li>Partage : Favoriser les échanges culturels entre les passionnés et les professionnels.</li>
-                <li>Accessibilité : Rendre l’animation japonaise accessible à tous, grâce à des projections, des
-                    ateliers et des activités
-                    interactives.</li>
+            <h2 class="about__subtitle">Charte : Valeurs et thématique de l’édition</h2>
+            <p class="about__text">Chaque édition du Festival des Films d'Animation Japonais repose sur des valeurs
+                fortes :</p>
+            <ul class="about__list">
+                <li class="about__item">Créativité : Mettre en avant l’originalité et l’audace artistique des créateurs
+                    japonais.</li>
+                <li class="about__item">Partage : Favoriser les échanges culturels entre les passionnés et les
+                    professionnels.</li>
+                <li class="about__item">Accessibilité : Rendre l’animation japonaise accessible à tous, grâce à des
+                    projections, des ateliers et des activités interactives.</li>
             </ul>
-            <p>Pour l’édition 2025, la thématique choisie est : Les Films d’animation Japonais. Nous souhaitons ainsi
-                éveiller la
-                curiosité et provoquer des discussions autour de cet aspect essentiel de l’animation japonaise.</p>
-            <p>Rejoignez-nous pour célébrer cet univers captivant qui continue d’inspirer des générations de spectateurs
-                à travers le
-                monde.</p>
+            <p class="about__text">Pour l’édition 2025, la thématique choisie est : Les Films d’animation Japonais. Nous
+                souhaitons ainsi éveiller la curiosité et provoquer des discussions autour de cet aspect essentiel de
+                l’animation japonaise.</p>
+            <p class="about__text">Rejoignez-nous pour célébrer cet univers captivant qui continue d’inspirer des
+                générations de spectateurs à travers le monde.</p>
         </section>
     </main>
+
     <footer class="footer">
         <section class="footer__logo">
-            <img src="/assets/icones/logo.svg" alt="Logo du festival">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
         </section>
-        <section>
-            <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        <section class="footer__decor">
+            <img class="footer__decor-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
         </section>
-        <section class="footer__link">
-            <ul>
+        <section class="footer__links">
+            <ul class="footer__list">
                 <li class="footer__item">
                     <a class="footer__link" href="">MENTIONS LÉGALES</a>
                 </li>
@@ -110,8 +108,10 @@
                     <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
                 </li>
             </ul>
-            <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-            <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            <div class="footer__socials">
+                <img class="footer__social-icon" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+                <img class="footer__social-icon" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            </div>
         </section>
     </footer>
 </body>

@@ -12,14 +12,14 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="/index.html">
+            <a class="header__logo-link" href="/index.html">
                 <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
                     height="50" />
             </a>
         </div>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar" aria-hidden="true"></span>
-            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+            <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list list-unstyled">
@@ -39,79 +39,82 @@
         </nav>
     </header>
 
-    <body>
-        <main class="main">
-            <section class="main__inscription">
-                <h1 class="main__inscription-title">Inscriptions et tarifs</h1>
-                <h2 class="main__inscription-text">Pour s'inscrire au festival, remplissez le formulaire suivant :</h2>
-                <form class="main__inscription-form" action="#" method="post">
-                    <div class="main__inscription-form-field">
-                        <label class="main__inscription-form-label" for="nom">NOM</label>
-                        <input class="main__inscription-form-input" type="text" id="nom" name="nom"
-                            placeholder="Écrire ici..." required>
-                    </div>
-                    <div class="main__inscription-form-field">
-                        <label class="main__inscription-form-label" for="prenom">PRÉNOM</label>
-                        <input class="main__inscription-form-input" type="text" id="prenom" name="prenom"
-                            placeholder="Écrire ici..." required>
-                    </div>
-                    <div class="main__inscription-form-field">
-                        <label class="main__inscription-form-label" for="email">ADRESSE MAIL</label>
-                        <input class="main__inscription-form-input" type="email" id="email" name="email"
-                            placeholder="Écrire ici..." required>
-                    </div>
-                    <div class="main__inscription-form-field">
-                        <label class="main__inscription-form-label" for="age">ÂGE</label>
-                        <input class="main__inscription-form-input" type="number" id="age" name="age"
-                            placeholder="Écrire ici..." required>
-                        <section>
-                            <button>SOUMETTRE</button>
-                        </section>
+    <main class="main">
+        <section class="main__inscription">
+            <h1 class="main__inscription-title">Inscriptions et tarifs</h1>
+            <h2 class="main__inscription-text">Pour s'inscrire au festival, remplissez le formulaire suivant :</h2>
+            <form class="main__inscription-form" action="#" method="post">
+                <div class="main__inscription-form-field">
+                    <label class="main__inscription-form-label" for="nom">NOM</label>
+                    <input class="main__inscription-form-input" type="text" id="nom" name="nom"
+                        placeholder="Écrire ici..." required>
+                </div>
+                <div class="main__inscription-form-field">
+                    <label class="main__inscription-form-label" for="prenom">PRÉNOM</label>
+                    <input class="main__inscription-form-input" type="text" id="prenom" name="prenom"
+                        placeholder="Écrire ici..." required>
+                </div>
+                <div class="main__inscription-form-field">
+                    <label class="main__inscription-form-label" for="email">ADRESSE MAIL</label>
+                    <input class="main__inscription-form-input" type="email" id="email" name="email"
+                        placeholder="Écrire ici..." required>
+                </div>
+                <div class="main__inscription-form-field">
+                    <label class="main__inscription-form-label" for="age">ÂGE</label>
+                    <input class="main__inscription-form-input" type="number" id="age" name="age"
+                        placeholder="Écrire ici..." required>
+                </div>
+                <button class="main__inscription-form-button">SOUMETTRE</button>
+            </form>
+        </section>
 
-                        <section>
-                            <h2>Tarifs du festival :</h2>
+        <section class="main__tarifs">
+            <h2 class="main__tarifs-title">Tarifs du festival :</h2>
 
-                            <p>Pass Journée :
-                            <p>
-                            <ul>
-                                <li>Adultes (à partir de 18 ans): 10€</li>
-                                <li>Réduit (étudiants, moins de 18 ans): 8€</li>
-                                <li>Enfants (moins de 12 ans) : 3€</li>
-                            </ul>
+            <p class="main__tarifs-description">Pass Journée :</p>
+            <ul class="main__tarifs-list">
+                <li class="main__tarifs-item">Adultes (à partir de 18 ans): 10€</li>
+                <li class="main__tarifs-item">Réduit (étudiants, moins de 18 ans): 8€</li>
+                <li class="main__tarifs-item">Enfants (moins de 12 ans) : 3€</li>
+            </ul>
 
-                            <p>Pass 3 jours :
-                            <p>
-                            <ul>
-                                <li>Adultes (à partir de 18 ans): 25€</li>
-                                <li>Réduit (étudiants, moins de 18 ans): 19€</li>
-                                <li>Enfants (moins de 12 ans) : 8€</li>
-                            </ul>
-                        </section>
-        </main>
-        <footer class="footer">
-            <section class="footer__logo">
-                <img src="/assets/icones/logo.svg" alt="Logo du festival">
-            </section>
-            <section>
-                <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
-            </section>
-            <section class="footer__link">
-                <ul>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">MENTIONS LÉGALES</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="/contact.html">CONTACT</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">EN SAVOIR PLUS</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
-                    </li>
-                </ul>
-                <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-                <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
-            </section>
-        </footer>
-    </body>
+            <p class="main__tarifs-description">Pass 3 jours :</p>
+            <ul class="main__tarifs-list">
+                <li class="main__tarifs-item">Adultes (à partir de 18 ans): 25€</li>
+                <li class="main__tarifs-item">Réduit (étudiants, moins de 18 ans): 19€</li>
+                <li class="main__tarifs-item">Enfants (moins de 12 ans) : 8€</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__logo">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
+        </section>
+        <section class="footer__image">
+            <img class="footer__image-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        </section>
+        <section class="footer__links">
+            <ul class="footer__links-list">
+                <li class="footer__links-item">
+                    <a class="footer__links-link" href="">MENTIONS LÉGALES</a>
+                </li>
+                <li class="footer__links-item">
+                    <a class="footer__links-link" href="/contact.html">CONTACT</a>
+                </li>
+                <li class="footer__links-item">
+                    <a class="footer__links-link" href="">EN SAVOIR PLUS</a>
+                </li>
+                <li class="footer__links-item">
+                    <a class="footer__links-link" href="">CONDITIONS GÉNÉRALES</a>
+                </li>
+            </ul>
+            <div class="footer__socials">
+                <img class="footer__socials-icon" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+                <img class="footer__socials-icon" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

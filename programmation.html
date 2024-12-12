@@ -9,17 +9,17 @@
     <script defer src="script.js"></script>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="header__logo">
-            <a href="/index.html">
+            <a class="header__logo-link" href="/index.html">
                 <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
                     height="50" />
             </a>
         </div>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar" aria-hidden="true"></span>
-            <img src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
+            <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list list-unstyled">
@@ -39,158 +39,170 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-content">
         <section class="hero">
-            <h1>La programmation</h1>
-            <h2>Différents stands sont mis en place avec :</h2>
-            <ul>
-                <li>Diffusions de films d’animation japonais (certains exclusifs)</li>
-                <li>Diffusions de making-of</li>
-                <li>Rencontres, discussions, dédicaces avec des réalisateurs, producteurs, animateurs et autres corps de
-                    métiers reliés</li>
-                <li>Ateliers et autres activités de découverte des métiers et de la réalisation dans l’animation
-                    japonaise
-                </li>
-                <li>Stand avec des petits créateurs qui vendent leurs créations en rapport avec la culture japonaise.
-                </li>
+            <h1 class="hero__title">La programmation</h1>
+            <h2 class="hero__subtitle">Différents stands sont mis en place avec :</h2>
+            <ul class="hero__list">
+                <li class="hero__item">Diffusions de films d’animation japonais (certains exclusifs)</li>
+                <li class="hero__item">Diffusions de making-of</li>
+                <li class="hero__item">Rencontres, discussions, dédicaces avec des réalisateurs, producteurs, animateurs
+                    et autres corps de métiers reliés</li>
+                <li class="hero__item">Ateliers et autres activités de découverte des métiers et de la réalisation dans
+                    l’animation japonaise</li>
+                <li class="hero__item">Stand avec des petits créateurs qui vendent leurs créations en rapport avec la
+                    culture japonaise.</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Quelques exemples de films diffusés :</h2>
+        <section class="films">
+            <h2 class="films__title">Quelques exemples de films diffusés :</h2>
+            <div class="films__gallery">
+                <img class="films__poster" src="/assets/img/yn.webp" alt="affiche du film Your name.">
+                <img class="films__poster" src="/assets/img/chateau.webp" alt="affiche du film Le Chateau Ambulant">
+                <img class="films__poster" src="/assets/img/totoro.webp" alt="affiche du film Mon Voisin Totoro">
+                <img class="films__poster" src="/assets/img/chihiro.webp" alt="affiche du film Le Voyage de Chihiro">
+                <img class="films__poster" src="/assets/img/enfantsdt.webp" alt="affiche du film Les Enfants du Temps">
+            </div>
         </section>
 
-        <section>
-            <img src="/assets/img/yn.webp" alt="affiche du film Your name.">
-            <img src="/assets/img/chateau.webp" alt="affiche du film Le Chateau Ambulant">
-            <img src="/assets/img/totoro.webp" alt="affiche du film Mon Voisin Totoro">
-            <img src="/assets/img/chihiro.webp" alt="affiche du film Le Voyage de Chihiro">
-            <img src="/assets/img/enfantsdt.webp" alt="affiche du film Les Enfants du Temps">
-        </section>
+        <section class="schedule">
+            <h2 class="schedule__title">Programmation en fonction des jours :</h2>
 
-        <section>
-            <h2>Programmation en fonction des jours :</h2>
-        </section>
+            <article class="schedule__day">
+                <h3 class="schedule__date">11 juillet 2025</h3>
 
-        <section>
-            <h3>11 juillet 2025</h3>
-        </section>
-        <section>
-            <h2>Les Enfants du temps</h2>
-            <img src="/assets/img/enfantsdutemps.webp" alt="extrait du film Les enfants du temps">
-            <ul>
-                <li>Début : 10h</li>
-                <li>Durée : 1h35</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="/enfantsdutemps.html" class="btn">En savoir plus</a>
-        </section>
+                <div class="schedule__film">
+                    <h2 class="schedule__film-title">Les Enfants du temps</h2>
+                    <img class="schedule__film-img" src="/assets/img/enfantsdutemps.webp"
+                        alt="extrait du film Les enfants du temps">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 10h</li>
+                        <li class="schedule__film-detail">Durée : 1h35</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="/enfantsdutemps.html" class="schedule__film-link btn">En savoir plus</a>
+                </div>
 
-        <section>
-            <h2>Mon Voisin Totoro</h2>
-            <img src="/assets/img/totoro2.webp" alt="extrait du film Mon voisin Totoro">
-            <ul>
-                <li>Début : 14h</li>
-                <li>Durée : 1h35</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="/monvoisintotoro.html" class="btn">En savoir plus</a>
-        </section>
+                <div class="schedule__film">
+                    <h2 class="schedule__film-title">Mon Voisin Totoro</h2>
+                    <img class="schedule__film-img" src="/assets/img/totoro2.webp"
+                        alt="extrait du film Mon voisin Totoro">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 14h</li>
+                        <li class="schedule__film-detail">Durée : 1h35</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="/monvoisintotoro.html" class="schedule__film-link btn">En savoir plus</a>
+                </div>
 
-        <section>
-            <h2>Princesse Mononoké</h2>
-            <img src="/assets/img/monoke.webp" alt="extrait du film Princesse Mononoké">
-            <ul>
-                <li>Début : 18h</li>
-                <li>Durée : 2h13</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <div class="schedule__film">
+                    <h2 class="schedule__film-title">Princesse Mononoké</h2>
+                    <img class="schedule__film-img" src="/assets/img/monoke.webp"
+                        alt="extrait du film Princesse Mononoké">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 18h</li>
+                        <li class="schedule__film-detail">Durée : 2h13</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </div>
+            </article>
 
-        <section>
-            <h3>12 juillet 2025</h3>
-        </section>
-        <section>
-            <h2>Le Voyage de Chihiro</h2>
-            <img src="/assets/img/voyage-chihiro.webp" alt="extrait du film Le voyage de Chihiro">
-            <ul>
-                <li>Début : 10h</li>
-                <li>Durée : 2h05</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+            <article class="schedule__day">
+                <h3 class="schedule__date">12 juillet 2025</h3>
 
-        <section>
-            <h2>Kiki la petite sorcière</h2>
-            <img src="/assets/img/kiki-sorciere.webp" alt="extrait du film Kiki la petite sorcière">
-            <ul>
-                <li>Début : 14h</li>
-                <li>Durée : 1h42</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <div class="schedule__film">
+                    <h2 class="schedule__film-title">Le Voyage de Chihiro</h2>
+                    <img class="schedule__film-img" src="/assets/img/voyage-chihiro.webp"
+                        alt="extrait du film Le voyage de Chihiro">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 10h</li>
+                        <li class="schedule__film-detail">Durée : 2h05</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </div>
 
-        <section>
-            <h2>Your Name.</h2>
-            <img src="/assets/img/your-name.webp" alt="extrait du film Your Name.">
-            <ul>
-                <li>Début : 18h</li>
-                <li>Durée : 1h50</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <section class="schedule__date">
+                    <h3 class="schedule__date-title">12 juillet 2025</h3>
+                </section>
 
-        <section>
-            <h3>13 juillet 2025</h3>
-        </section>
-        <section>
-            <h2>Suzume</h2>
-            <img src="/assets/img/suzume.webp" alt="extrait du film Suzume">
-            <ul>
-                <li>Début : 10h</li>
-                <li>Durée : 2h02</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <section class="schedule__film">
+                    <h2 class="schedule__film-title">Kiki la petite sorcière</h2>
+                    <img class="schedule__film-img" src="/assets/img/kiki-sorciere.webp"
+                        alt="extrait du film Kiki la petite sorcière">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 14h</li>
+                        <li class="schedule__film-detail">Durée : 1h42</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </section>
 
-        <section>
-            <h2>Le Château ambulant</h2>
-            <img src="/assets/img/chateau-ambulant.webp" alt="extrait du film Le Château ambulant">
-            <ul>
-                <li>Début : 14h</li>
-                <li>Durée : 1h59</li>
-                <li>Tous publics</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <section class="schedule__film">
+                    <h2 class="schedule__film-title">Your Name.</h2>
+                    <img class="schedule__film-img" src="/assets/img/your-name.webp" alt="extrait du film Your Name.">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 18h</li>
+                        <li class="schedule__film-detail">Durée : 1h50</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </section>
 
-        <section>
-            <h2>Perfect Blue</h2>
-            <img src="/assets/img/perfect-blue.webp" alt="extrait du film Perfect Blue">
-            <ul>
-                <li>Début : 18h</li>
-                <li>Durée : 1h21</li>
-                <li>Interdit au moins de 12 ans</li>
-            </ul>
-            <a href="#" class="btn">En savoir plus</a>
-        </section>
+                <section class="schedule__date">
+                    <h3 class="schedule__date-title">13 juillet 2025</h3>
+                </section>
 
+                <section class="schedule__film">
+                    <h2 class="schedule__film-title">Suzume</h2>
+                    <img class="schedule__film-img" src="/assets/img/suzume.webp" alt="extrait du film Suzume">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 10h</li>
+                        <li class="schedule__film-detail">Durée : 2h02</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </section>
+
+                <section class="schedule__film">
+                    <h2 class="schedule__film-title">Le Château ambulant</h2>
+                    <img class="schedule__film-img" src="/assets/img/chateau-ambulant.webp"
+                        alt="extrait du film Le Château ambulant">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 14h</li>
+                        <li class="schedule__film-detail">Durée : 1h59</li>
+                        <li class="schedule__film-detail">Tous publics</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </section>
+
+                <section class="schedule__film">
+                    <h2 class="schedule__film-title">Perfect Blue</h2>
+                    <img class="schedule__film-img" src="/assets/img/perfect-blue.webp"
+                        alt="extrait du film Perfect Blue">
+                    <ul class="schedule__film-info">
+                        <li class="schedule__film-detail">Début : 18h</li>
+                        <li class="schedule__film-detail">Durée : 1h21</li>
+                        <li class="schedule__film-detail">Interdit au moins de 12 ans</li>
+                    </ul>
+                    <a href="#" class="schedule__film-link btn">En savoir plus</a>
+                </section>
+
+            </article>
+        </section>
     </main>
 
     <footer class="footer">
         <section class="footer__logo">
-            <img src="/assets/icones/logo.svg" alt="Logo du festival">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
         </section>
-        <section>
-            <img src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        <section class="footer__decor">
+            <img class="footer__decor-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
         </section>
-        <section class="footer__link">
-            <ul>
+        <section class="footer__links">
+            <ul class="footer__list">
                 <li class="footer__item">
                     <a class="footer__link" href="">MENTIONS LÉGALES</a>
                 </li>
@@ -204,8 +216,10 @@
                     <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
                 </li>
             </ul>
-            <img class="footer__link" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-            <img class="footer__link" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            <div class="footer__socials">
+                <img class="footer__social-icon" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+                <img class="footer__social-icon" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+            </div>
         </section>
     </footer>
 </body>
