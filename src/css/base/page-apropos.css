@@ -2,19 +2,30 @@
     padding: 20px;
 }
 
-.about__title {
-    padding-bottom: 69px;
+.about {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
-.about__text {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    color: #333;
+.about__title {
+    padding: 0px;
 }
+
+.about__subtitle {
+    padding-top: 60px;
+}
+
+.about__item {
+    font-family: "Rounded Mplus 1c";
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.85px;
+}
+
 
 .about__list {
     list-style: disc;
-    margin-left: 20px;
 }
 
 .about__item {

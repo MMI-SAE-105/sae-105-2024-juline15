@@ -3,6 +3,10 @@
     padding: 20px;
 }
 
+.hero__title{
+    padding-bottom: 39px;
+}
+
 .hero__list {
     list-style: disc;
     padding-left: 40px;
