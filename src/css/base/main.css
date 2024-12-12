@@ -6,18 +6,44 @@ body {
     font-size: 13px;
 }
 
+h1 {
+    font-family: "Reggae One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Rounded Mplus 1c";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.85px;
+    color: black;
+    text-align: left;
+}
+
 .hero {
     text-align: center;
     padding: 20px;
     background-color: rgb(255, 228, 225);
 }
 
-.hero__title {
+.hero__title--main {
+    color: var(--blanc, #FFF);
+    text-align: center;
+    font-family: "Reggae One";
     font-size: 24px;
-    color: white;
-    margin-bottom: 20px;
-    background-color: rgb(178, 34, 34);
-    font-family: var(--ReggaeOne);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    background: var(--rouge-terne, #B22222);
 }
 
 .hero__image {
@@ -26,7 +52,7 @@ body {
     padding-bottom: 35px;
 }
 
-.hero__text-title {
+.hero__text--title {
     font-size: 24px;
     color: black;
     margin-bottom: 20px;

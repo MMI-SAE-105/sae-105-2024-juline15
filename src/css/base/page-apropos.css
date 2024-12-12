@@ -1,9 +1,26 @@
+.main {
+    padding: 20px;
+}
+
 .about__title {
-    color: #000;
-    font-family: "Reggae One";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.92px;
+    padding-bottom: 69px;
+}
+
+.about__subtitle {
+
+}
+
+.about__text {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.about__list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.about__item {
+    margin-bottom: 10px;
 }
