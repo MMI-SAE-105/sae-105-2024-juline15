@@ -1,41 +1,71 @@
 .footer {
-    background-color: rgb(178, 34, 34);
+    background-color: rgb(240, 128, 128);
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    position: relative;
+    width: 393px;
+    height: 369px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;/ align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
 }
 
-.footer__logo-img,
-.footer__flowers-img {
+.footer__logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.footer__logo-img {
     width: 50px;
+    height: 50px;
+}
+
+.footer__flowers {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__flowers img {
+    width: 160px;
     height: auto;
+    overflow: hidden;
+}
+
+.footer__links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    margin-right: 25px;
 }
 
 .footer__list {
     list-style: none;
-    padding: 0;
+    padding: 16px;
+    margin: 16px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer__item {
-    margin: 0 15px;
+    margin: 0;
 }
 
 .footer__link {
     color: white;
-    text-decoration: none;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .footer__social {
-    width: 30px;
+    display: inline-block;
+    width: 48px;
     height: auto;
-    margin: 0 5px;
+    margin-left: 70px;
+    margin-bottom: 39px;
 }

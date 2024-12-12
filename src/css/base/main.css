@@ -6,6 +6,7 @@ body {
     font-size: 13px;
 }
 
+/*page d'accueil*/
 
 .hero {
     text-align: center;
@@ -79,6 +80,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 78px;
 }
 
 .programmation__title,
@@ -138,13 +140,20 @@ body {
 }
 
 .partenaires__title {
-    font-size: 24px;
-    color: rgb(178, 34, 34);
+    color: black;
     margin-bottom: 20px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.85px;
+    text-align: left;
 }
 
 .partenaires__image {
-    width: 100px;
     height: auto;
     margin: 0 10px;
+    width: 307px;
+    height: 103px;
+    flex-shrink: 0;
 }
