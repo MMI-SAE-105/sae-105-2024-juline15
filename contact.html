@@ -1,114 +1,111 @@
 <!DOCTYPE html>
-    <html lang="fr">
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Festival des Films d'Animation Japonais</title>
-        <link rel="stylesheet" href="/src/css/base/main.css">
-        <script defer src="script.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival des Films d'Animation Japonais</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="/src/js/script.js"></script>
+</head>
 
-    <body>
-        <header class="header">
-            <div class="header__logo">
-                <a class="header__logo-link" href="/index.html">
-                    <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
-                        height="50" />
-                </a>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="/index.html">
+                <img class="header__logo-img" src="/assets/icones/logo.svg" alt="logo du festival" width="50"
+                    height="50" />
+            </a>
+        </div>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/apropos.html">Le Festival (À propos)</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/programmation.html">Programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/infospratiques.html">Informations pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/inscriptions.html">Inscriptions et tarifs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section-contact">
+            <h1 class="section-contact__title">Contact</h1>
+        </section>
+
+        <section class="section-contact__socials">
+            <h2 class="section-contact__socials-title">Nos réseaux sociaux :</h2>
+            <div class="section-contact__socials-icons">
+                <img class="section-contact__social-icon" src="/assets/icones/tiktok-black.svg" alt="logo tiktok">
+                <img class="section-contact__social-icon" src="/assets/icones/insta-black.svg" alt="logo instagram">
             </div>
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <img class="menu-btn__icon" src="/assets/icones/menu.svg" alt="icone de menu" width="47" height="47" />
-            </button>
-            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item">
-                        <a class="menu__link" href="/apropos.html">Le Festival (À propos)</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/programmation.html">Programmation</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/infospratiques.html">Informations pratiques</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/inscriptions.html">Inscriptions et tarifs</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        </section>
 
-        <main class="main">
-            <section class="section-contact">
-                <h1 class="section-contact__title">Contact</h1>
-            </section>
-
-            <section class="section-contact__socials">
-                <h2 class="section-contact__socials-title">Nos réseaux sociaux :</h2>
-                <div class="section-contact__socials-icons">
-                    <img class="section-contact__social-icon" src="/assets/icones/tiktok-black.svg" alt="logo tiktok">
-                    <img class="section-contact__social-icon" src="/assets/icones/insta-black.svg" alt="logo instagram">
+        <section class="section-contact__newsletter">
+            <h2 class="section-contact__newsletter-title">Inscrivez-vous pour recevoir des offres et informations
+                exclusives :</h2>
+            <form class="section-contact__form">
+                <div class="section-contact__form-group">
+                    <label for="nom" class="section-contact__form-label">NOM</label>
+                    <input type="text" id="nom" name="nom" class="section-contact__form-input"
+                        placeholder="Écrire ici...">
                 </div>
-            </section>
-
-            <section class="section-contact__newsletter">
-                <h2 class="section-contact__newsletter-title">Inscrivez-vous pour recevoir des offres et informations
-                    exclusives :</h2>
-                <form class="section-contact__form">
-                    <div class="section-contact__form-group">
-                        <label for="nom" class="section-contact__form-label">NOM</label>
-                        <input type="text" id="nom" name="nom" class="section-contact__form-input"
-                            placeholder="Écrire ici...">
-                    </div>
-                    <div class="section-contact__form-group">
-                        <label for="prenom" class="section-contact__form-label">PRÉNOM</label>
-                        <input type="text" id="prenom" name="prenom" class="section-contact__form-input"
-                            placeholder="Écrire ici...">
-                    </div>
-                    <div class="section-contact__form-group">
-                        <label for="email" class="section-contact__form-label">ADRESSE</label>
-                        <input type="text" id="email" name="email" class="section-contact__form-input"
-                            placeholder="Écrire ici...">
-                    </div>
-                    <div class="section-contact__form-group">
-                        <label for="message" class="section-contact__form-label">MESSAGE</label>
-                        <input type="text" id="message" name="message" class="section-contact__form-input"
-                            placeholder="Écrire ici...">
-                    </div>
-                    <button class="section-contact__form-button">SOUMETTRE</button>
-                </form>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <section class="footer__logo">
-                <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
-            </section>
-            <section class="footer__image">
-                <img class="footer__image-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
-            </section>
-            <section class="footer__links">
-                <ul class="footer__links-list">
-                    <li class="footer__links-item">
-                        <a class="footer__links-link" href="">MENTIONS LÉGALES</a>
-                    </li>
-                    <li class="footer__links-item">
-                        <a class="footer__links-link" href="/contact.html">CONTACT</a>
-                    </li>
-                    <li class="footer__links-item">
-                        <a class="footer__links-link" href="">EN SAVOIR PLUS</a>
-                    </li>
-                    <li class="footer__links-item">
-                        <a class="footer__links-link" href="">CONDITIONS GÉNÉRALES</a>
-                    </li>
-                </ul>
-                <div class="footer__socials">
-                    <img class="footer__socials-icon" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
-                    <img class="footer__socials-icon" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+                <div class="section-contact__form-group">
+                    <label for="prenom" class="section-contact__form-label">PRÉNOM</label>
+                    <input type="text" id="prenom" name="prenom" class="section-contact__form-input"
+                        placeholder="Écrire ici...">
                 </div>
-            </section>
-        </footer>
-    </body>
+                <div class="section-contact__form-group">
+                    <label for="email" class="section-contact__form-label">ADRESSE</label>
+                    <input type="text" id="email" name="email" class="section-contact__form-input"
+                        placeholder="Écrire ici...">
+                </div>
+                <div class="section-contact__form-group">
+                    <label for="message" class="section-contact__form-label">MESSAGE</label>
+                    <input type="text" id="message" name="message" class="section-contact__form-input"
+                        placeholder="Écrire ici...">
+                </div>
+                <button class="section-contact__form-button">SOUMETTRE</button>
+            </form>
+        </section>
+    </main>
 
-    </html>
+    <footer class="footer">
+        <section class="footer__logo">
+            <img class="footer__logo-img" src="/assets/icones/logo.svg" alt="Logo du festival">
+        </section>
+        <section class="footer__flowers">
+            <img class="footer__flowers-img" src="/assets/img/fleurs-footer.webp" alt="image de fleur de cerisier">
+        </section>
+        <section class="footer__links">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href="">MENTIONS LÉGALES</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/contact.html">CONTACT</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">EN SAVOIR PLUS</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">CONDITIONS GÉNÉRALES</a>
+                </li>
+            </ul>
+            <img class="footer__social" src="/assets/icones/tiktok-logo.svg" alt="logo Tiktok">
+            <img class="footer__social" src="/assets/icones/insta-logo.svg" alt="logo Instagram">
+        </section>
+    </footer>
+</body>
+
+</html>
