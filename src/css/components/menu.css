@@ -1,32 +1,90 @@
-.menu-btn__bar {
-    display: none;
-}
-
-.menu-btn__icon {
-    width: 30px;
-    height: auto;
-}
-
 .header__menu {
+    visibility: hidden;
     display: flex;
-    justify-content: center;
-    background-color: rgb(178, 34, 34);
-    padding: 10px;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgb(240, 128, 128);
+    color: var(--black);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space5x) var(--space3x) var(--space3x);
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
 }
 
-.menu__list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-.menu__item {
-    margin: 0 15px;
+.header__menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
 }
 
 .menu__link {
-    color: white;
+    color: var(--black);
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: var(--fs-xl);
+    display: block;
+}
+
+.menu__link--silent {
+    color: var(--gray-600);
+    font-size: var(--fs-s);
+}
+
+.menu__item {
+    margin-bottom: var(--space3x);
+    padding-bottom: var(--space1x);
+    border-bottom: 1px solid var(--black);
+}
+
+.menusocial-network,
+.menuterms {
+    display: flex;
+    gap: var(--space2x);
+    justify-content: end;
+    margin-bottom: var(--space2x);
+}
+
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    background: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
+
+/* Transformation des barres du bouton de menu en croix */
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background: white;
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
 }
