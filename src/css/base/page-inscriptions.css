@@ -1,0 +1,74 @@
+.main {
+    padding: 20px;
+}
+
+.main__inscription-title{
+    font-size: 24px;
+    padding-bottom: 46px;
+}
+
+.main__tarifs-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main__inscription-text {
+    font-size: 18px;
+    margin-bottom: 42px;
+}
+
+.main__inscription-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__inscription-form-field {
+    margin-bottom: 15px;
+}
+
+.main__inscription-form-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.main__inscription-form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 95%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.main__inscription-form-button {
+    padding: 5px;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Raleway;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132%;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 64px;
+}
+
+.main__tarifs-description {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.main__tarifs-item {
+    font-size: 16px;
+    margin-bottom: 5px;
+}

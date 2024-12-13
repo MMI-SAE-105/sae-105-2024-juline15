@@ -10,7 +10,9 @@
 /* Base */
 @import "/src/css/base/main.css";
 @import "/src/css/base/page-programmation.css";
-@import "/src/css/base/page-invites.css";
+@import "/src/css/base/page-apropos.css";
+@import "/src/css/base/page-inscriptions.css";
+@import "/src/css/base/page-enfantsdutemps.css";
 
 /* Layout */
 @import "/src/css/layout/footer.css";
