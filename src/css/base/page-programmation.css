@@ -3,7 +3,7 @@
     padding: 20px;
 }
 
-.hero__title{
+.hero__title {
     padding-bottom: 39px;
 }
 
@@ -75,9 +75,14 @@ img {
 }
 
 .schedule__title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    text-align: center;
+    color: #000;
+    font-family: "Rounded Mplus 1c";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.85px;
+    text-align: left;
 }
 
 .schedule__day {
@@ -87,7 +92,11 @@ img {
 .schedule__date {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: -70px;
 }
 
 .schedule__film {
