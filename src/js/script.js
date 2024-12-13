@@ -14,19 +14,22 @@ if (toggle && nav) {
 }
 
 /* Carousel */
-const carousel = document.querySelector(".film__gallery");
+const carousel = document.querySelector(".films__gallery"); // Assurez-vous que la classe est correcte
 const prevButton = document.querySelector(".carousel__button--prev");
 const nextButton = document.querySelector(".carousel__button--next");
-const premierItem = document.querySelector(".films__poster");
+const premierItem = document.querySelector(".films__poster"); // Assurez-vous que c'est la première image du carrousel
 
-if (carousel) {
+if (carousel && prevButton && nextButton && premierItem) {
     prevButton.addEventListener("click", () => {
+        // Utiliser la largeur de l'élément pour déterminer le défilement
         const scrollAmount = premierItem.clientWidth;
-        carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });;
+        carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
 
     nextButton.addEventListener("click", () => {
+        // Utiliser la largeur de l'élément pour déterminer le défilement
         const scrollAmount = premierItem.clientWidth;
-        carousel.scrollBy({ left: +scrollAmount, behavior: "smooth" });;
+        carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
 }
+
