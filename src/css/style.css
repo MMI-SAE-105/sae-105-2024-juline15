@@ -13,6 +13,7 @@
 @import "/src/css/base/page-apropos.css";
 @import "/src/css/base/page-inscriptions.css";
 @import "/src/css/base/page-enfantsdutemps.css";
+@import "/src/css/base/page-infos.css";
 
 /* Layout */
 @import "/src/css/layout/footer.css";
