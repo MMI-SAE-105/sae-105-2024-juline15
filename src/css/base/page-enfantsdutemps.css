@@ -26,7 +26,6 @@
     position: absolute;
     bottom: -150px;
     right: 180px;
-    z-index: 1;
 }
 
 .film__details {
@@ -38,7 +37,6 @@
 .film__description,
 .film__extras {
     position: relative;
-    z-index: 2;
     margin-left: 35px;
     margin-right: 35px;
 }
