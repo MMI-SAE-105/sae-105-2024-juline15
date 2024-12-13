@@ -79,3 +79,7 @@
 .footer__social {
     margin-left: 10px;
 }
+
+.footer__social-icons {
+    align-items: center;
+}

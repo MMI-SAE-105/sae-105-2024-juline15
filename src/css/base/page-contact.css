@@ -30,6 +30,8 @@
 .section-contact__social-icon {
     width: 48px;
     height: auto;
+    margin-bottom: 49px;
+    margin-top: 27px;
 }
 
 .section-contact__newsletter {
@@ -38,7 +40,7 @@
 
 .section-contact__newsletter-title {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 59px;
 }
 
 .section-contact__form-group {
