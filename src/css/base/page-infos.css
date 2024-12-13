@@ -28,6 +28,14 @@
 
 .main__list-item {
     margin-bottom: 5px;
+    color: #000;
+    font-family: "Rounded Mplus 1c";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    width: 330px;
 }
 
 .main__image {
