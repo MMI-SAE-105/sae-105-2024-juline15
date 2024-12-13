@@ -1,5 +1,9 @@
 .main-content {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .film__title {
@@ -82,3 +86,4 @@
 .film__button:hover {
     background-color: #b30000;
 }
+
