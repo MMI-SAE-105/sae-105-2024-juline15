@@ -22,11 +22,6 @@ img {
     height: auto;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .films__gallery {
     display: flex;
     gap: 16px;
